@@ -7,6 +7,7 @@
     tools:context=".ui.detail.DetailFragment">
 
     <androidx.constraintlayout.widget.Group
+        android:id="@+id/movieDetailGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"

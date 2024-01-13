@@ -10,3 +10,9 @@ fun ImageView.loadCircleImage(path: String?){
         .apply(centerCropTransform()
         .error(R.drawable.ic_error).circleCrop()).into(this)
 }
+
+fun ImageView.loadImage(path: String?){
+    Glide.with(this.context).load(Constants.IMAGE_BASE_URL + path)
+        .apply(centerCropTransform()
+            .error(R.drawable.ic_error)).into(this)
+}
